@@ -1,0 +1,43 @@
+html { background: black }
+body { margin: 3%; background: white none; max-width: 800px; text-align:left;}
+div  { margin: 1%; padding : 1%; clear: both; overflow: hidden;}
+
+#header img { float: left; }
+#header h1 { margin: 1px; text-align: right;}
+#header h1:first-line { color: gray; }
+
+.person { border: thin solid silver; padding: 1%; background: #F8F8F8;}
+.copy   { text-align:center;color: red; }
+.author { color: blue;}
+.links  { text-align:center }
+
+h2 { margin: 0pt;}
+
+a { 
+  white-space: nowrap;
+  text-decoration: none;
+  display: inline-block; 
+  background-color: white;
+  border: 1px solid silver;
+  padding: 4px 2px;
+  color: black;
+  margin: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(silver));
+  border-radius: 4px 4px 4px 4px;  
+}
+
+@media (max-width:500px)
+{
+  body { margin:0; }
+  div  { margin:0 }
+  #header {
+    border-bottom: 1px solid gray;
+    padding: 8px 0;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(silver), to(gray));
+  }
+  .copy {
+    border-top: 1px solid gray;
+    padding: 8px 0;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(gray), to(silver));
+  }
+}
